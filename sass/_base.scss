@@ -1,0 +1,52 @@
+// FONTS 
+
+@import url('https://fonts.googleapis.com/css?family=Allura|Montserrat:300,400&display=swap');
+
+// LAYOUT
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    position: relative;
+    margin: 0;
+    padding: 0;
+    font-family: $font-std;
+    font-weight: 300;
+    background: #222;
+}
+
+.countries {
+    padding: 10px;
+    border: 1px solid 
+}
+
+.country {
+    ul {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 0;
+        padding: 10px 0;
+        border: 2px solid #dadada;
+        color: #dadada;
+        list-style-type: none;
+        li {
+            margin: 5px 0;
+        }
+    }
+}
+
+.country__header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 40px;
+    border: 2px solid #dadada;
+    background: #818181;
+    color: #000000;
+    font-size: 20px;
+}
