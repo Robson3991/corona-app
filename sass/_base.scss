@@ -18,25 +18,13 @@ body {
     background: #222;
 }
 
-.countries {
-    padding: 10px;
-    border: 1px solid 
-}
-
 .country {
-    ul {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        margin: 0;
-        padding: 10px 0;
-        border: 2px solid #dadada;
-        color: #dadada;
-        list-style-type: none;
-        li {
-            margin: 5px 0;
-        }
+    overflow: hidden;
+    height: 51px;
+    background: #20272f;
+    transition: height .2s;
+    &.active {
+        height: 170px;
     }
 }
 
@@ -44,9 +32,30 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 40px;
-    border: 2px solid #dadada;
-    background: #818181;
-    color: #000000;
+    box-sizing: border-box;
+    height: 50px;
+    border-bottom: 1px solid #797979;
+    background: #373b47;
+    color: #fff;
     font-size: 20px;
+    font-weight: 500;
+    .province {
+        margin-left: 3px;
+        font-weight: 300;
+        color: rgba($c-white, 0.6);
+    }
+}
+
+.country__text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 16px 0;
+    color: rgba($c-white, 0.8);
+    list-style-type: none;
+    li {
+        margin: 5px 0;
+    }
 }

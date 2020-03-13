@@ -1,3 +1,5 @@
+import { openText} from './openText';
+
 export function makeCountries(countries) {
 
     countries.forEach(el => {
@@ -9,7 +11,16 @@ export function makeCountries(countries) {
         header.classList.add('country__header');
         header.innerText = el.country;
 
+        if(el.province.length > 0) {
+            // header.innerText = el.country + ' - ' + el.province;
+            const province = document.createElement('span');
+            province.classList.add('province');
+            province.innerText = '(' + el.province + ')';
+            header.appendChild(province);
+        }
+
         const ul = document.createElement('ul');
+        ul.classList.add('country__text')
 
         function makeLi(element) {
             const li = document.createElement('li');
@@ -27,10 +38,6 @@ export function makeCountries(countries) {
             ul.appendChild(li);
 
         }
-        
-        if(el.province.length > 0) {
-            makeLi('province');
-        }
 
         makeLi('confirmed');
         makeLi('deaths');
@@ -41,6 +48,8 @@ export function makeCountries(countries) {
 
         document.querySelector('.countries').appendChild(div);
 
-    })
+    });
+
+    openText();
 
 }
