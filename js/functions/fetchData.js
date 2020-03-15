@@ -25,7 +25,6 @@ export function init() {
     Promise.all([confirmedApi, deathsApi, recoveredApi])
         .then(values => Promise.all(values.map(value => value.json())))
         .then(finalVals => {
-            console.log(finalVals);
 
             let confirmedWorld = finalVals[0].latest;
             let deathsWorld = finalVals[1].latest;

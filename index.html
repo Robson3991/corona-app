@@ -7,9 +7,22 @@
     <link rel="stylesheet" href="style.bundle.css">
     <link rel="manifest" href="./manifest.json">
     <title>Coronavirus statistics app</title>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-DC3T6M40GE"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-DC3T6M40GE');
+    </script>
 </head>
 <body>
     <div class="wrapper">
+        <h1 class="app__title">
+            Covid 19 (coronavirus) statistics.
+            <span class="app__subtitle">Data was refresh once a day</span>
+        </h1>
         <section class="statistics-hld">
             <div class="statistic">
                 <span class="statistic__value js-confirmed"></span>
@@ -29,7 +42,7 @@
         </div>
         <main class="countries">        
             <header class="countries__header">
-                <span>cuntries</span>
+                <span>countries</span>
                 <span>confirmed</span>
                 <span>deaths</span>
                 <span>recovered</span>
