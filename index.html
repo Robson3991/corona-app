@@ -4,11 +4,38 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Webpack Project</title>
     <link rel="stylesheet" href="style.bundle.css">
+    <link rel="manifest" href="./manifest.json">
+    <title>Coronavirus statistics app</title>
 </head>
 <body>
-    <main class="countries"></main>
+    <div class="wrapper">
+        <section class="statistics-hld">
+            <div class="statistic">
+                <span class="statistic__value js-confirmed"></span>
+                <span class="statistic__title">Confirmed</span>
+            </div>
+            <div class="statistic">
+                <span class="statistic__value js-deaths"></span>
+                <span class="statistic__title">Deaths</span>
+            </div>
+            <div class="statistic">
+                <span class="statistic__value js-recovered"></span>
+                <span class="statistic__title">Recovered</span>
+            </div>
+        </section>
+        <div class="search">
+            <input type="text" placeholder="search..." class="search__input js-search">
+        </div>
+        <main class="countries">        
+            <header class="countries__header">
+                <span>cuntries</span>
+                <span>confirmed</span>
+                <span>deaths</span>
+                <span>recovered</span>
+            </header>
+        </main>
+    </div>
     <script src="main.bundle.js"></script>
 </body>
 </html>

@@ -1,0 +1,24 @@
+.statistics-hld {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding: 20px 10px;
+    margin: 20px 0;
+}
+
+.statistic {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 10px 0;
+    &__value {
+        color: $c-white;
+        font-size: 40px;
+        font-weight: 300;
+    }
+    &__title {
+        color: #ff6767;
+        font-size: 20px;
+        font-weight: 500;
+    }
+}

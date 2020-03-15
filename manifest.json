@@ -1,0 +1,20 @@
+{
+    "name": "Coronavirus Statistics",
+    "short_name": "Coronavirus",
+    "start_url": ".",
+    "display": "standalone",
+    "background_color": "#fff",
+    "description": "Check coronavirus statistic. Data was refreash onced a day",
+    "icons": [
+      {
+        "src": "img/icon-big.png",
+        "sizes": "512x512",
+        "type": "image/png"
+      },
+      {
+        "src": "img/icon-normal.png",
+        "sizes": "192x192",
+        "type": "image/png"
+      }
+    ]
+}

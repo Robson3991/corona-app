@@ -1,4 +1,5 @@
 import { openText} from './openText';
+import { filter } from './filter'; 
 
 export function makeCountries(countries) {
 
@@ -6,6 +7,7 @@ export function makeCountries(countries) {
 
         const div = document.createElement('div');
         div.classList.add('country');
+        div.dataset.country = el.country;
 
         const header = document.createElement('header');
         header.classList.add('country__header');
@@ -51,5 +53,6 @@ export function makeCountries(countries) {
     });
 
     openText();
+    filter();
 
 }
